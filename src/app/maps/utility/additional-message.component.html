@@ -1,0 +1,49 @@
+<div class="A7" [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_08 col_50'><span class='default' id='text1'>{{languageService.translate("Additional_Message_Information")}}</span>  </div>
+</div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col'>
+  <div class='lgr_27 col_02'><span class='green' id='text3'>{{languageService.translate("Message_ID")}}</span>  </div>
+  <div class='lgr_10 col_29'><dynamic-field [id]='"messageId"' [size]=10 [line]=2 [column]=29 [(ngModel)]='messageId'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col'>
+  <div class='lgr_78 col_02 add_msg_info_text green' name="messageline">{{messageline.value}}</div>
+</div>
+<ng-container *ngIf="messageline.value.length/78 > 1"><div class='lgr_col empty'></div></ng-container>
+<ng-container *ngIf="!secondMessageline.value.startsWith('\n')"><div class='lgr_col empty'></div></ng-container>
+<div class='lgr_col empty'></div>
+<div class='lgr_col'>
+  <div class='lgr_78 col_02 add_msg_info_text green' name="secondMessageline">{{secondMessageline.value}}</div>
+</div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col'>
+  <div class='lgr_36 col_02'><span class='blue' id='text3'>{{languageService.translate("Press_Enter_to_continue")}}</span>  </div>
+</div>
+<div class='lgr_col empty'></div>
+<div class='lgr_col'>
+  <div class='lgr_36 col_02'><span class='blue' id='text3'>F1=Help</span></div>
+  <div class='lgr_36 col_15'><span class='blue' id='text3'>F3=Exit</span></div>
+  <div class='lgr_36 col_30'><span class='blue' id='text3'>F6=Print</span></div>
+  <div class='lgr_36 col_50'><span class='blue' id='text3'>F9=Display message details</span></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_36 col_02'><span class='blue' id='text3'>F10=Display message in job log</span>  </div>
+  <div class='lgr_36 col_50'><span class='blue' id='text3'>F12=Cancel</span>  </div>
+  <div class='lgr_36 col_65'><span class='blue' id='text3'>F21=Select assistance level</span>  </div>
+</div>
+<div class='lgr_col empty'></div>
+

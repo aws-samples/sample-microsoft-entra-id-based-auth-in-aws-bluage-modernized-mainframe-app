@@ -1,0 +1,39 @@
+
+<div [ngStyle]="mapDivStyle()">
+  <div class='lgr_col'>
+	<div class='lgr_24 col_28'><span class='default' id='title'>{{languageService.translate("Display_program_messages")}}</span>  </div>
+  </div>
+  
+  <div class='lgr_col empty'></div>
+  <div class='lgr_col empty'></div>
+
+  <div class='lgr_col'>
+  	<div class='lgr_11 col_8'><span class='default' id='dsply'>DSPLY</span>  </div>
+  	<div class='lgr_27 col_8'><dynamic-field [id]='"message"' [size]=27 [(ngModel)]='message'></dynamic-field></div>
+  	<!-- display the response if it's not empty -->
+  	<div *ngIf='!isResponseEmpty'>
+  		<div class='lgr_27 col_40'><dynamic-field [id]='"response"' [size]=27 [(ngModel)]='response'></dynamic-field></div>
+  	</div>
+  </div>  
+  
+  <!-- ask for the user's replay if the response object is not empty -->
+  <div *ngIf='!isResponseEmpty; else noReplay'>
+	<div class='lgr_col empty'></div>
+	<div class='lgr_col empty'></div>
+	
+	<div class='lgr_col'>
+		<div class='lgr_24 col_8'><span class='default' id='text1'>{{languageService.translate("Type_reply_Enter")}}</span>  </div>
+	</div>
+	<div class='lgr_col'>
+		<div class='lgr_11 col_8'><span class='default' id='text2'>{{languageService.translate("Reply")}}</span>  </div>
+		<div class='lgr_27 col_20'><dynamic-field [id]='"userresp"' [size]=27 [focused]='true' [(ngModel)]='userresp'></dynamic-field></div>
+	</div>
+</div>
+
+<ng-template #noReplay>
+	<div class='lgr_col'>
+		<div class='lgr_12 col_8'><span class='default' id='text1'>{{languageService.translate("Press_Enter")}}</span>  </div>
+	</div>
+</ng-template>
+</div>
+

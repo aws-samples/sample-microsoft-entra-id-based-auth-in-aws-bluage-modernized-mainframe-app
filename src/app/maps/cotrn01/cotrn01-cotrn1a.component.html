@@ -1,0 +1,105 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text1'>Tran:</span>  </div>
+  <div class='lgr_04 col_07'><dynamic-field [id]='"trnname"' [size]=4 [line]=1 [column]=7 [(ngModel)]='trnname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title01"' [size]=40 [line]=1 [column]=21 [(ngModel)]='title01'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text2'>Date:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curdate"' [size]=8 [line]=1 [column]=71 [(ngModel)]='curdate'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text3'>Prog:</span>  </div>
+  <div class='lgr_08 col_07'><dynamic-field [id]='"pgmname"' [size]=8 [line]=2 [column]=7 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title02"' [size]=40 [line]=2 [column]=21 [(ngModel)]='title02'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text4'>Time:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curtime"' [size]=8 [line]=2 [column]=71 [(ngModel)]='curtime'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_30'><span class='brt high neutral' id='text5'>View Transaction</span>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_06'><span class='turquoise' id='text6'>Enter Tran ID:</span>  </div>
+  <div class='lgr_16 col_21'><dynamic-field [id]='"trnidin"' [size]=16 [line]=6 [column]=21 [(ngModel)]='trnidin'></dynamic-field></div>
+  <div class='lgr_00 col_38'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_70 col_06'><span class='neutral' id='text8'>----------------------------------------------------------------------</span>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_15 col_06'><span class='turquoise' id='text9'>Transaction ID:</span>  </div>
+  <div class='lgr_16 col_22'><dynamic-field [id]='"trnid"' [size]=16 [line]=10 [column]=22 [(ngModel)]='trnid'></dynamic-field></div>
+  <div class='lgr_00 col_39'>  </div>
+  <div class='lgr_12 col_45'><span class='turquoise' id='text11'>Card Number:</span>  </div>
+  <div class='lgr_16 col_58'><dynamic-field [id]='"cardnum"' [size]=16 [line]=10 [column]=58 [(ngModel)]='cardnum'></dynamic-field></div>
+  <div class='lgr_00 col_75'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_06'><span class='turquoise' id='text13'>Type CD:</span>  </div>
+  <div class='lgr_02 col_15'><dynamic-field [id]='"ttypcd"' [size]=2 [line]=12 [column]=15 [(ngModel)]='ttypcd'></dynamic-field></div>
+  <div class='lgr_00 col_18'>  </div>
+  <div class='lgr_12 col_23'><span class='turquoise' id='text15'>Category CD:</span>  </div>
+  <div class='lgr_04 col_36'><dynamic-field [id]='"tcatcd"' [size]=4 [line]=12 [column]=36 [(ngModel)]='tcatcd'></dynamic-field></div>
+  <div class='lgr_00 col_41'>  </div>
+  <div class='lgr_07 col_46'><span class='turquoise' id='text17'>Source:</span>  </div>
+  <div class='lgr_10 col_54'><dynamic-field [id]='"trnsrc"' [size]=10 [line]=12 [column]=54 [(ngModel)]='trnsrc'></dynamic-field></div>
+  <div class='lgr_00 col_65'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_12 col_06'><span class='turquoise' id='text19'>Description:</span>  </div>
+  <div class='lgr_60 col_19'><dynamic-field [id]='"tdesc"' [size]=60 [line]=14 [column]=19 [(ngModel)]='tdesc'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_07 col_06'><span class='turquoise' id='text21'>Amount:</span>  </div>
+  <div class='lgr_12 col_14'><dynamic-field [id]='"trnamt"' [size]=12 [line]=16 [column]=14 [(ngModel)]='trnamt'></dynamic-field></div>
+  <div class='lgr_00 col_27'>  </div>
+  <div class='lgr_10 col_31'><span class='turquoise' id='text23'>Orig Date:</span>  </div>
+  <div class='lgr_10 col_42'><dynamic-field [id]='"torigdt"' [size]=10 [line]=16 [column]=42 [(ngModel)]='torigdt'></dynamic-field></div>
+  <div class='lgr_00 col_53'>  </div>
+  <div class='lgr_10 col_57'><span class='turquoise' id='text25'>Proc Date:</span>  </div>
+  <div class='lgr_10 col_68'><dynamic-field [id]='"tprocdt"' [size]=10 [line]=16 [column]=68 [(ngModel)]='tprocdt'></dynamic-field></div>
+  <div class='lgr_00 col_79'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_12 col_06'><span class='turquoise' id='text27'>Merchant ID:</span>  </div>
+  <div class='lgr_09 col_19'><dynamic-field [id]='"mid"' [size]=9 [line]=18 [column]=19 [(ngModel)]='mid'></dynamic-field></div>
+  <div class='lgr_00 col_29'>  </div>
+  <div class='lgr_14 col_33'><span class='turquoise' id='text29'>Merchant Name:</span>  </div>
+  <div class='lgr_30 col_48'><dynamic-field [id]='"mname"' [size]=30 [line]=18 [column]=48 [(ngModel)]='mname'></dynamic-field></div>
+  <div class='lgr_00 col_79'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_06'><span class='turquoise' id='text31'>Merchant City:</span>  </div>
+  <div class='lgr_25 col_21'><dynamic-field [id]='"mcity"' [size]=25 [line]=20 [column]=21 [(ngModel)]='mcity'></dynamic-field></div>
+  <div class='lgr_00 col_47'>  </div>
+  <div class='lgr_13 col_53'><span class='turquoise' id='text33'>Merchant Zip:</span>  </div>
+  <div class='lgr_10 col_67'><dynamic-field [id]='"mzip"' [size]=10 [line]=20 [column]=67 [(ngModel)]='mzip'></dynamic-field></div>
+  <div class='lgr_00 col_78'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_78 col_01'><dynamic-field [id]='"errmsg"' [size]=78 [line]=23 [column]=1 [(ngModel)]='errmsg'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_47 col_01'><span class='yellow' id='text35'>ENTER=Fetch  F3=Back  F4=Clear  F5=Browse Tran.</span>  </div>
+</div>
+</div>

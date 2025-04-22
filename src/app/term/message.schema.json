@@ -1,0 +1,289 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "AddComponents": {
+            "description": "This message adds new components to the display and fills their fields",
+            "properties": {
+                "command": {
+                    "type": "string"
+                },
+                "maps": {
+                    "items": {
+                        "$ref": "#/definitions/Map"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "command",
+                "maps"
+            ],
+            "type": "object"
+        },
+        "WindowComponents": {
+            "description": "This message adds new components to the display and fills their fields",
+            "properties": {
+                "command": {
+                    "type": "string"
+                },
+                "maps": {
+                    "items": {
+                        "$ref": "#/definitions/Map"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "command",
+                "maps"
+            ],
+            "type": "object"
+        },
+        "ArrayField": {
+            "properties": {
+                "attributes": {
+                    "$ref": "#/definitions/Attributes"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "fields": {
+                    "items": {
+                        "$ref": "#/definitions/Map"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "initialCursor": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "type": "object"
+        },
+        "Attributes": {
+            "properties": {
+                "color": {
+                    "type": "string"
+                },
+                "cursor": {
+                    "type": "boolean"
+                },
+                "end": {
+                    "type": "boolean"
+                },
+                "forceModified": {
+                    "type": "boolean"
+                },
+                "highlight": {
+                    "type": "string"
+                },
+                "intensity": {
+                    "type": "string"
+                },
+                "num": {
+                    "type": "string"
+                },
+                "numerical": {
+                    "type": "string"
+                },
+                "numberOfRecordsPerPage": {
+                    "enum": [
+                        0
+                    ],
+                    "type": "number"
+                },
+                "pageDown": {
+                    "type": "string"
+                },
+                "protection": {
+                    "type": "string"
+                },
+                "size": {
+                    "enum": [
+                        0
+                    ],
+                    "type": "number"
+                },
+                "top": {
+                    "type": "boolean"
+                },
+                "display": {
+                    "type": "boolean"
+                },
+                "line": {
+                    "type": "number"
+                },
+                "column": {
+                    "type": "number"
+                },
+                "dspMode": {
+                	"type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Field": {
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/SimpleField"
+                },
+                {
+                    "$ref": "#/definitions/ArrayField"
+                }
+            ]
+        },
+        "LogicalMessage": {
+            "description": "The parent class of all elementary operations, expressed as messages (V7-1103)",
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/AddComponents"
+                },
+                {
+                    "$ref": "#/definitions/WindowComponents"
+                },
+                {
+                    "$ref": "#/definitions/RebindComponents"
+                },
+                {
+                    "$ref": "#/definitions/RemoveAllComponents"
+                },
+                {
+                    "$ref": "#/definitions/SetCursorPosition"
+                }
+            ]
+        },
+        "Map": {
+            "properties": {
+                "component": {
+                    "type": "string"
+                },
+                "fields": {
+                    "items": {
+                        "$ref": "#/definitions/Field"
+                    },
+                    "type": "array"
+                },
+                "overlay": {
+                    "type": "boolean"
+                },
+                "startLineNumber": {
+                    "enum": [
+                        0
+                    ],
+                    "type": "number"
+                },
+                "dspMode": {
+                	"type": "string"
+                },
+                "cursorLine": {
+                	"type": "number"
+                },
+                "cursorColumn": {
+                	"type": "number"
+                }
+            },
+            "required": [
+                "component",
+                "fields"
+            ],
+            "type": "object"
+        },
+        "RebindComponents": {
+            "description": "This message update fields of some already displayed components",
+            "properties": {
+                "command": {
+                    "type": "string"
+                },
+                "maps": {
+                    "items": {
+                        "$ref": "#/definitions/Map"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "command",
+                "maps"
+            ],
+            "type": "object"
+        },
+        "RemoveAllComponents": {
+            "description": "This message removes all displayed components",
+            "properties": {
+                "command": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "command"
+            ],
+            "type": "object"
+        },
+        "SetCursorPosition": {
+            "description": "This message set cursor position",
+            "properties": {
+                "command": {
+                    "type": "string"
+                },
+                "cursor": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "command",
+                "cursor"
+            ],
+            "type": "object"
+        },
+        "SimpleField": {
+            "properties": {
+                "attributes": {
+                    "$ref": "#/definitions/Attributes"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "fields": {
+                    "items": {
+                        "$ref": "#/definitions/Map"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "initialCursor": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "type": "object"
+        }
+    },
+    "properties": {
+        "error": {
+            "type": "string"
+        },
+        "messages": {
+            "items": {
+                "$ref": "#/definitions/LogicalMessage"
+            },
+            "type": "array"
+        },
+        "nextTransID": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "messages"
+    ],
+    "type": "object"
+}
+

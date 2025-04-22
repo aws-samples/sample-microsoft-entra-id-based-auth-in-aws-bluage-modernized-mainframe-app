@@ -1,0 +1,10 @@
+<ng-container *ngIf="display">
+	<ng-container *ngFor="let row of rows; let i = index;">
+		<ng-template *ngIf="displayed(i)" [ngTemplateOutlet]="templateRef"
+			[ngTemplateOutletContext]="{$implicit: i}"></ng-template>
+	</ng-container>
+	<div class='lgr_col empty' *ngFor="let _ of [].constructor(getNbEmptyLines())"></div>
+	<div class="lgr_col" *ngIf='rows.length > 0 && getEndLabel() !== ""'>
+		<label id="lblArrayFoot" class="{{positionLabel()}}" [ngStyle]="overlayLastLine()">{{getEndLabel()}}</label>
+	</div>
+</ng-container>

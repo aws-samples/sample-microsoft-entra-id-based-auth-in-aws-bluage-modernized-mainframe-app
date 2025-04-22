@@ -1,0 +1,68 @@
+<div class='container-fluid'>
+    <h1>JICS User information</h1>
+    <div class="row">
+        <div class="col-md-5">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th>Field</th>
+                        <th>Value</th>
+                        <th>Size</th>
+                        <th *ngIf="userInfoSaved != null"><span style="color: blue;">Saved value</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label id="lab_termId" for="inp_termId">Terminal identification:</label></td>
+                        <td><input id="inp_termId" [(ngModel)]="userInfo.termId" maxlength="4" [disabled]="!userInfoInitialized" /></td>
+                        <td>4</td>
+                        <td *ngIf="userInfoSaved != null"><span style="color: blue;">{{userInfoSaved.termId}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><label id="lab_userId" for="inp_userId">User identification:</label></td>
+                        <td><input id="inp_userId" [(ngModel)]="userInfo.userId" maxlength="8" [disabled]="!userInfoInitialized" /></td>
+                        <td>8</td>
+                        <td *ngIf="userInfoSaved != null"><span style="color: blue;">{{userInfoSaved.userId}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><label id="lab_userName" for="inp_userName">User name:</label></td>
+                        <td><input id="inp_userName" [(ngModel)]="userInfo.userName" maxlength="10" [disabled]="!userInfoInitialized" /></td>
+                        <td>10</td>
+                        <td *ngIf="userInfoSaved != null"><span style="color: blue;">{{userInfoSaved.userName}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><label id="lab_netName" for="inp_netName">Network name:</label></td>
+                        <td><input id="inp_netName" [(ngModel)]="userInfo.netName" maxlength="8" [disabled]="!userInfoInitialized" /></td>
+                        <td>8</td>
+                        <td *ngIf="userInfoSaved != null"><span style="color: blue;">{{userInfoSaved.netName}}</span></td>
+                    </tr>
+                    <tr>
+                        <td><label id="lab_opId" for="inp_opId">Operator identification:</label></td>
+                        <td><input id="inp_opId" [(ngModel)]="userInfo.opId" maxlength="3" [disabled]="!userInfoInitialized" /></td>
+                        <td>3</td>
+                        <td *ngIf="userInfoSaved != null"><span style="color: blue;">{{userInfoSaved.opId}}</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button *ngIf="!userInfoInitialized" class="btn btn-info" (click)="getUserInfo()">Load</button>
+                            <button *ngIf="userInfoInitialized" class="btn btn-info" (click)="saveUserInfo()">Save</button>
+                        </td>
+                        <td *ngIf="userInfoResponse != null" colspan="3">
+                            <span *ngIf="userInfoResponse.success" style="color: green;">
+                                <b>{{userInfoResponse.message}}</b>
+                            </span>
+                            <span *ngIf="!userInfoResponse.success" style="color: red;">
+                                <b>{{userInfoResponse.message}}</b>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button routerLink="/transaction-runner" class="btn btn-success">Transaction Runner</button>
+        </div>
+    </div>
+</div>

@@ -1,17 +1,42 @@
-## My Project
 
-TODO: Fill this README out!
+**The following list of files in the repo have the changes required to integrate MSAL library into the modern application front-end code.
 
-Be sure to:
+- app.module.ts
+- app-routing.module.ts
+- app.component.ts
+- environment.ts
+- term.component.ts
+- term.component.html
+- package.json
+- index.html
 
-* Change the title in this README
-* Edit your repository description on GitHub
+# Web
 
-## Security
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## Development server
 
-## License
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+For dev environment, update target url in proxy.conf.json.
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+## Code scaffolding
 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+For production, update gapwalk-application url in config.json.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

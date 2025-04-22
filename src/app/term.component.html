@@ -1,0 +1,82 @@
+<div *ngIf="!configuration.useModernLegacyStyle; else modernLegacyStyle" class="term">
+    <div #dynamicTarget></div>
+</div>
+<ng-template #modernLegacyStyle>
+    <form class="form-horizontal" role="form">
+        <!-- shape -->
+        <!-- brand -->
+        <div id="rd_brand" class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-list-alt" aria-hidden="true"></i> {{configuration.webApp.name}}</a></div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a (click)="toggleOverwriteMode()">{{appService.insertMode ? 'Insert Mode' : 'Overwrite Mode'}}</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup</a>
+                            <ul class="dropdown-menu rd_csw" data-csw-id="rd_content">
+                                <li><a (click)="changeWidthSetup(1)" [class.selected-style]="selectedWidthMode === 1">Adaptative</a></li>
+                                <li><a (click)="changeWidthSetup(2)" [class.selected-style]="selectedWidthMode === 2">Fixed width</a></li>
+                                <li><a (click)="changeWidthSetup(3)" [class.selected-style]="selectedWidthMode === 3">Full width</a></li>
+                                <li><a (click)="changeDebugGrid(!isDebugGrid)" [class.selected-style]="isDebugGrid">Debug mode</a></li>
+                                <li><a (click)="changeSpinner(!isSpinner)">{{isSpinner ? 'Hide spinner' : 'Show spinner'}}</a></li>
+                                <li><a (click)="changeCursorOverwrite()">Overwrite Cursor Style : {{overwriteCursor}}</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme</a>
+                            <ul class="dropdown-menu rd_csw">
+                                <li *ngFor="let template of terminalConfig.style.templates">
+                                    <a [class.selected-style]="template.name === selectedTemplate" (click)="changeStyleScheme(template.name)">{{template.displayName}}</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/"(click)="logout()"><i class="fa fa-times-circle" aria-hidden="true"></i> Quit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end brand -->
+        <!-- shape_l1 -->
+        <div id="rd_content" [ngClass]="containerClasses" [class.lgr_showgrid]="isDebugGrid">
+            <div class="row">
+                <!-- rd_col01 -->
+                <div id="rd_col01" class="col-sm-12" [ngClass]="heightClasses">
+                    <div id="rd_col01_l1">
+                        <!-- legacy area -->
+                        <div #dynamicTarget></div>
+                        <!-- end legacy area -->
+                    </div>
+                </div>
+                <!-- end rd_col01 -->
+            </div>
+        </div>
+        <!-- end shape_l1 -->
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer_l1">
+                <div id="idFooter" class="container-fluid">
+                    <div class="row flex-center" >
+                        <div class="col-xs-3">
+                            <p>&copy; {{currentYear | date:'yyyy'}} <span class="text-primary">{{configuration.webApp.name}}</span></p>
+                        </div>
+                        <div class="col-xs-6 text-center">
+                            <p class="center">{{footerMessage}}</p>
+                        </div>
+                        <div class="col-xs-1" >
+                            <mat-spinner *ngIf="configuration.spinner && isSpinning()" diameter="30" color="primary"></mat-spinner>
+                        </div>
+                        <div class="col-xs-2">
+                            <p class="text-right">{{configuration.webApp.version}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+    </form>
+</ng-template>

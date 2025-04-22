@@ -1,0 +1,110 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text1'>Tran:</span>  </div>
+  <div class='lgr_04 col_07'><dynamic-field [id]='"trnname"' [size]=4 [line]=1 [column]=7 [(ngModel)]='trnname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title01"' [size]=40 [line]=1 [column]=21 [(ngModel)]='title01'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text2'>Date:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curdate"' [size]=8 [line]=1 [column]=71 [(ngModel)]='curdate'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text3'>Prog:</span>  </div>
+  <div class='lgr_08 col_07'><dynamic-field [id]='"pgmname"' [size]=8 [line]=2 [column]=7 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title02"' [size]=40 [line]=2 [column]=21 [(ngModel)]='title02'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text4'>Time:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curtime"' [size]=8 [line]=2 [column]=71 [(ngModel)]='curtime'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_15 col_30'><span class='brt high neutral' id='text5'>Add Transaction</span>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_13 col_06'><span class='turquoise' id='text6'>Enter Acct #:</span>  </div>
+  <div class='lgr_11 col_21'><dynamic-field [id]='"actidin"' [size]=11 [line]=6 [column]=21 [(ngModel)]='actidin'></dynamic-field></div>
+  <div class='lgr_00 col_33'>  </div>
+  <div class='lgr_04 col_37'><span class='neutral' id='text8'>(or)</span>  </div>
+  <div class='lgr_07 col_46'><span class='turquoise' id='text9'>Card #:</span>  </div>
+  <div class='lgr_16 col_55'><dynamic-field [id]='"cardnin"' [size]=16 [line]=6 [column]=55 [(ngModel)]='cardnin'></dynamic-field></div>
+  <div class='lgr_00 col_72'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_70 col_06'><span class='neutral' id='text11'>----------------------------------------------------------------------</span>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_06'><span class='turquoise' id='text12'>Type CD:</span>  </div>
+  <div class='lgr_02 col_15'><dynamic-field [id]='"ttypcd"' [size]=2 [line]=10 [column]=15 [(ngModel)]='ttypcd'></dynamic-field></div>
+  <div class='lgr_00 col_18'>  </div>
+  <div class='lgr_12 col_23'><span class='turquoise' id='text14'>Category CD:</span>  </div>
+  <div class='lgr_04 col_36'><dynamic-field [id]='"tcatcd"' [size]=4 [line]=10 [column]=36 [(ngModel)]='tcatcd'></dynamic-field></div>
+  <div class='lgr_00 col_41'>  </div>
+  <div class='lgr_07 col_46'><span class='turquoise' id='text16'>Source:</span>  </div>
+  <div class='lgr_10 col_54'><dynamic-field [id]='"trnsrc"' [size]=10 [line]=10 [column]=54 [(ngModel)]='trnsrc'></dynamic-field></div>
+  <div class='lgr_00 col_65'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_12 col_06'><span class='turquoise' id='text18'>Description:</span>  </div>
+  <div class='lgr_60 col_19'><dynamic-field [id]='"tdesc"' [size]=60 [line]=12 [column]=19 [(ngModel)]='tdesc'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_07 col_06'><span class='turquoise' id='text20'>Amount:</span>  </div>
+  <div class='lgr_12 col_14'><dynamic-field [id]='"trnamt"' [size]=12 [line]=14 [column]=14 [(ngModel)]='trnamt'></dynamic-field></div>
+  <div class='lgr_00 col_27'>  </div>
+  <div class='lgr_10 col_31'><span class='turquoise' id='text22'>Orig Date:</span>  </div>
+  <div class='lgr_10 col_42'><dynamic-field [id]='"torigdt"' [size]=10 [line]=14 [column]=42 [(ngModel)]='torigdt'></dynamic-field></div>
+  <div class='lgr_00 col_53'>  </div>
+  <div class='lgr_10 col_57'><span class='turquoise' id='text24'>Proc Date:</span>  </div>
+  <div class='lgr_10 col_68'><dynamic-field [id]='"tprocdt"' [size]=10 [line]=14 [column]=68 [(ngModel)]='tprocdt'></dynamic-field></div>
+  <div class='lgr_00 col_79'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_13'><span class='blue' id='text26'>(-99999999.99)</span>  </div>
+  <div class='lgr_12 col_41'><span class='blue' id='text27'>(YYYY-MM-DD)</span>  </div>
+  <div class='lgr_12 col_67'><span class='blue' id='text28'>(YYYY-MM-DD)</span>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_12 col_06'><span class='turquoise' id='text29'>Merchant ID:</span>  </div>
+  <div class='lgr_09 col_19'><dynamic-field [id]='"mid"' [size]=9 [line]=16 [column]=19 [(ngModel)]='mid'></dynamic-field></div>
+  <div class='lgr_00 col_29'>  </div>
+  <div class='lgr_14 col_33'><span class='turquoise' id='text31'>Merchant Name:</span>  </div>
+  <div class='lgr_30 col_48'><dynamic-field [id]='"mname"' [size]=30 [line]=16 [column]=48 [(ngModel)]='mname'></dynamic-field></div>
+  <div class='lgr_00 col_79'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_06'><span class='turquoise' id='text33'>Merchant City:</span>  </div>
+  <div class='lgr_25 col_21'><dynamic-field [id]='"mcity"' [size]=25 [line]=18 [column]=21 [(ngModel)]='mcity'></dynamic-field></div>
+  <div class='lgr_00 col_47'>  </div>
+  <div class='lgr_13 col_53'><span class='turquoise' id='text35'>Merchant Zip:</span>  </div>
+  <div class='lgr_10 col_67'><dynamic-field [id]='"mzip"' [size]=10 [line]=18 [column]=67 [(ngModel)]='mzip'></dynamic-field></div>
+  <div class='lgr_00 col_78'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_55 col_06'><span class='turquoise' id='text37'>You are about to add this transaction. Please confirm :</span>  </div>
+  <div class='lgr_01 col_63'><dynamic-field [id]='"confirm"' [size]=1 [line]=21 [column]=63 [(ngModel)]='confirm'></dynamic-field></div>
+  <div class='lgr_00 col_65'>  </div>
+  <div class='lgr_05 col_66'><span class='neutral' id='text39'>(Y/N)</span>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_78 col_01'><dynamic-field [id]='"errmsg"' [size]=78 [line]=23 [column]=1 [(ngModel)]='errmsg'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_53 col_01'><span class='yellow' id='text40'>ENTER=Continue  F3=Back  F4=Clear  F5=Copy Last Tran.</span>  </div>
+</div>
+</div>

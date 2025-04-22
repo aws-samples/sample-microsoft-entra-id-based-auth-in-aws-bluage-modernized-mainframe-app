@@ -1,0 +1,13 @@
+<div [ngStyle]="mapDivStyle()">
+	<div class='lgr_col'>
+		<app-table #table [id]='"arraymessageline"' [rows]='arraymessageline' [nbDisplayedEntries]='1'
+			[nbLinesByRow]='1' [isArrayMessageLine]='true'>
+			<ng-template let-i>
+				<div class='lgr_col split'>
+					<standard-messageline *ngIf="arraymessageline.length > i"
+						[(arraymessageline)]='arraymessageline[i]'></standard-messageline>
+				</div>
+			</ng-template>
+		</app-table>
+	</div>
+</div>

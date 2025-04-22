@@ -1,0 +1,177 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text1'>Tran:</span>  </div>
+  <div class='lgr_00 col_01'>  </div>
+  <div class='lgr_04 col_07'><dynamic-field [id]='"trnname"' [size]=4 [line]=1 [column]=7 [(ngModel)]='trnname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title01"' [size]=40 [line]=1 [column]=21 [(ngModel)]='title01'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text3'>Date:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curdate"' [size]=8 [line]=1 [column]=71 [(ngModel)]='curdate'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text4'>Prog:</span>  </div>
+  <div class='lgr_08 col_07'><dynamic-field [id]='"pgmname"' [size]=8 [line]=2 [column]=7 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title02"' [size]=40 [line]=2 [column]=21 [(ngModel)]='title02'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text5'>Time:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curtime"' [size]=8 [line]=2 [column]=71 [(ngModel)]='curtime'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_33'><span class='neutral' id='text6'>Update Account</span>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_19'><span class='turquoise' id='text7'>Account Number :</span>  </div>
+  <div class='lgr_11 col_38'><dynamic-field [id]='"acctsid"' [size]=11 [line]=5 [column]=38 [(ngModel)]='acctsid'></dynamic-field></div>
+  <div class='lgr_00 col_50'>  </div>
+  <div class='lgr_12 col_57'><span class='turquoise' id='text9'>Active Y/N: </span>  </div>
+  <div class='lgr_01 col_70'><dynamic-field [id]='"acsttus"' [size]=1 [line]=5 [column]=70 [(ngModel)]='acsttus'></dynamic-field></div>
+  <div class='lgr_00 col_72'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_08'><span class='turquoise' id='text11'>Opened :</span>  </div>
+  <div class='lgr_04 col_17'><dynamic-field [id]='"opnyear"' [size]=4 [line]=6 [column]=17 [(ngModel)]='opnyear'></dynamic-field></div>
+  <div class='lgr_01 col_22'><span class='default' id='text12'>-</span>  </div>
+  <div class='lgr_02 col_24'><dynamic-field [id]='"opnmon"' [size]=2 [line]=6 [column]=24 [(ngModel)]='opnmon'></dynamic-field></div>
+  <div class='lgr_01 col_27'><span class='default' id='text13'>-</span>  </div>
+  <div class='lgr_02 col_29'><dynamic-field [id]='"opnday"' [size]=2 [line]=6 [column]=29 [(ngModel)]='opnday'></dynamic-field></div>
+  <div class='lgr_00 col_32'>  </div>
+  <div class='lgr_21 col_39'><span class='turquoise' id='text15'>Credit Limit        :</span>  </div>
+  <div class='lgr_15 col_61'><dynamic-field [id]='"acrdlim"' [size]=15 [line]=6 [column]=61 [(ngModel)]='acrdlim'></dynamic-field></div>
+  <div class='lgr_00 col_77'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_08'><span class='turquoise' id='text17'>Expiry :</span>  </div>
+  <div class='lgr_04 col_17'><dynamic-field [id]='"expyear"' [size]=4 [line]=7 [column]=17 [(ngModel)]='expyear'></dynamic-field></div>
+  <div class='lgr_01 col_22'><span class='default' id='text18'>-</span>  </div>
+  <div class='lgr_02 col_24'><dynamic-field [id]='"expmon"' [size]=2 [line]=7 [column]=24 [(ngModel)]='expmon'></dynamic-field></div>
+  <div class='lgr_01 col_27'><span class='default' id='text19'>-</span>  </div>
+  <div class='lgr_02 col_29'><dynamic-field [id]='"expday"' [size]=2 [line]=7 [column]=29 [(ngModel)]='expday'></dynamic-field></div>
+  <div class='lgr_00 col_32'>  </div>
+  <div class='lgr_21 col_39'><span class='turquoise' id='text21'>Cash credit Limit   :</span>  </div>
+  <div class='lgr_15 col_61'><dynamic-field [id]='"acshlim"' [size]=15 [line]=7 [column]=61 [(ngModel)]='acshlim'></dynamic-field></div>
+  <div class='lgr_00 col_77'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_08'><span class='turquoise' id='text23'>Reissue:</span>  </div>
+  <div class='lgr_04 col_17'><dynamic-field [id]='"risyear"' [size]=4 [line]=8 [column]=17 [(ngModel)]='risyear'></dynamic-field></div>
+  <div class='lgr_01 col_22'><span class='default' id='text24'>-</span>  </div>
+  <div class='lgr_02 col_24'><dynamic-field [id]='"rismon"' [size]=2 [line]=8 [column]=24 [(ngModel)]='rismon'></dynamic-field></div>
+  <div class='lgr_01 col_27'><span class='default' id='text25'>-</span>  </div>
+  <div class='lgr_02 col_29'><dynamic-field [id]='"risday"' [size]=2 [line]=8 [column]=29 [(ngModel)]='risday'></dynamic-field></div>
+  <div class='lgr_00 col_32'>  </div>
+  <div class='lgr_21 col_39'><span class='turquoise' id='text27'>Current Balance     :</span>  </div>
+  <div class='lgr_15 col_61'><dynamic-field [id]='"acurbal"' [size]=15 [line]=8 [column]=61 [(ngModel)]='acurbal'></dynamic-field></div>
+  <div class='lgr_00 col_77'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_21 col_39'><span class='turquoise' id='text29'>Current Cycle Credit:</span>  </div>
+  <div class='lgr_15 col_61'><dynamic-field [id]='"acrcycr"' [size]=15 [line]=9 [column]=61 [(ngModel)]='acrcycr'></dynamic-field></div>
+  <div class='lgr_00 col_77'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_08'><span class='turquoise' id='text31'>Account Group:</span>  </div>
+  <div class='lgr_10 col_23'><dynamic-field [id]='"aaddgrp"' [size]=10 [line]=10 [column]=23 [(ngModel)]='aaddgrp'></dynamic-field></div>
+  <div class='lgr_00 col_34'>  </div>
+  <div class='lgr_21 col_39'><span class='turquoise' id='text33'>Current Cycle Debit :</span>  </div>
+  <div class='lgr_15 col_61'><dynamic-field [id]='"acrcydb"' [size]=15 [line]=10 [column]=61 [(ngModel)]='acrcydb'></dynamic-field></div>
+  <div class='lgr_00 col_77'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_16 col_32'><span class='neutral' id='text35'>Customer Details</span>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_08'><span class='turquoise' id='text36'>Customer id  :</span>  </div>
+  <div class='lgr_09 col_23'><dynamic-field [id]='"acstnum"' [size]=9 [line]=12 [column]=23 [(ngModel)]='acstnum'></dynamic-field></div>
+  <div class='lgr_00 col_33'>  </div>
+  <div class='lgr_04 col_49'><span class='turquoise' id='text38'>SSN:</span>  </div>
+  <div class='lgr_03 col_55'><dynamic-field [id]='"actssn1"' [size]=3 [line]=12 [column]=55 [(ngModel)]='actssn1'></dynamic-field></div>
+  <div class='lgr_01 col_59'><span class='default' id='text39'>-</span>  </div>
+  <div class='lgr_02 col_61'><dynamic-field [id]='"actssn2"' [size]=2 [line]=12 [column]=61 [(ngModel)]='actssn2'></dynamic-field></div>
+  <div class='lgr_01 col_64'><span class='default' id='text40'>-</span>  </div>
+  <div class='lgr_04 col_66'><dynamic-field [id]='"actssn3"' [size]=4 [line]=12 [column]=66 [(ngModel)]='actssn3'></dynamic-field></div>
+  <div class='lgr_00 col_71'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_14 col_08'><span class='turquoise' id='text42'>Date of birth:</span>  </div>
+  <div class='lgr_04 col_23'><dynamic-field [id]='"dobyear"' [size]=4 [line]=13 [column]=23 [(ngModel)]='dobyear'></dynamic-field></div>
+  <div class='lgr_01 col_28'><span class='default' id='text43'>-</span>  </div>
+  <div class='lgr_02 col_30'><dynamic-field [id]='"dobmon"' [size]=2 [line]=13 [column]=30 [(ngModel)]='dobmon'></dynamic-field></div>
+  <div class='lgr_01 col_33'><span class='default' id='text44'>-</span>  </div>
+  <div class='lgr_02 col_35'><dynamic-field [id]='"dobday"' [size]=2 [line]=13 [column]=35 [(ngModel)]='dobday'></dynamic-field></div>
+  <div class='lgr_00 col_38'>  </div>
+  <div class='lgr_11 col_49'><span class='turquoise' id='text46'>FICO Score:</span>  </div>
+  <div class='lgr_03 col_62'><dynamic-field [id]='"acstfco"' [size]=3 [line]=13 [column]=62 [(ngModel)]='acstfco'></dynamic-field></div>
+  <div class='lgr_00 col_66'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_10 col_01'><span class='turquoise' id='text48'>First Name</span>  </div>
+  <div class='lgr_13 col_28'><span class='turquoise' id='text49'>Middle Name: </span>  </div>
+  <div class='lgr_12 col_55'><span class='turquoise' id='text50'>Last Name : </span>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_25 col_01'><dynamic-field [id]='"acsfnam"' [size]=25 [line]=15 [column]=1 [(ngModel)]='acsfnam'></dynamic-field></div>
+  <div class='lgr_00 col_27'>  </div>
+  <div class='lgr_25 col_28'><dynamic-field [id]='"acsmnam"' [size]=25 [line]=15 [column]=28 [(ngModel)]='acsmnam'></dynamic-field></div>
+  <div class='lgr_00 col_54'>  </div>
+  <div class='lgr_25 col_55'><dynamic-field [id]='"acslnam"' [size]=25 [line]=15 [column]=55 [(ngModel)]='acslnam'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_01'><span class='turquoise' id='text53'>Address:</span>  </div>
+  <div class='lgr_50 col_10'><dynamic-field [id]='"acsadl1"' [size]=50 [line]=16 [column]=10 [(ngModel)]='acsadl1'></dynamic-field></div>
+  <div class='lgr_00 col_61'>  </div>
+  <div class='lgr_06 col_63'><span class='turquoise' id='text55'>State </span>  </div>
+  <div class='lgr_02 col_73'><dynamic-field [id]='"acsstte"' [size]=2 [line]=16 [column]=73 [(ngModel)]='acsstte'></dynamic-field></div>
+  <div class='lgr_00 col_76'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_50 col_10'><dynamic-field [id]='"acsadl2"' [size]=50 [line]=17 [column]=10 [(ngModel)]='acsadl2'></dynamic-field></div>
+  <div class='lgr_00 col_61'>  </div>
+  <div class='lgr_03 col_63'><span class='turquoise' id='text58'>Zip</span>  </div>
+  <div class='lgr_05 col_73'><dynamic-field [id]='"acszipc"' [size]=5 [line]=17 [column]=73 [(ngModel)]='acszipc'></dynamic-field></div>
+  <div class='lgr_00 col_79'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='turquoise' id='text60'>City </span>  </div>
+  <div class='lgr_50 col_10'><dynamic-field [id]='"acscity"' [size]=50 [line]=18 [column]=10 [(ngModel)]='acscity'></dynamic-field></div>
+  <div class='lgr_00 col_61'>  </div>
+  <div class='lgr_07 col_63'><span class='turquoise' id='text62'>Country</span>  </div>
+  <div class='lgr_03 col_73'><dynamic-field [id]='"acsctry"' [size]=3 [line]=18 [column]=73 [(ngModel)]='acsctry'></dynamic-field></div>
+  <div class='lgr_00 col_77'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_01'><span class='turquoise' id='text64'>Phone 1:</span>  </div>
+  <div class='lgr_03 col_10'><dynamic-field [id]='"acsph1a"' [size]=3 [line]=19 [column]=10 [(ngModel)]='acsph1a'></dynamic-field></div>
+  <div class='lgr_03 col_14'><dynamic-field [id]='"acsph1b"' [size]=3 [line]=19 [column]=14 [(ngModel)]='acsph1b'></dynamic-field></div>
+  <div class='lgr_04 col_18'><dynamic-field [id]='"acsph1c"' [size]=4 [line]=19 [column]=18 [(ngModel)]='acsph1c'></dynamic-field></div>
+  <div class='lgr_00 col_23'>  </div>
+  <div class='lgr_30 col_24'><span class='turquoise' id='text66'>Government Issued Id Ref    : </span>  </div>
+  <div class='lgr_20 col_58'><dynamic-field [id]='"acsgovt"' [size]=20 [line]=19 [column]=58 [(ngModel)]='acsgovt'></dynamic-field></div>
+  <div class='lgr_00 col_79'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_08 col_01'><span class='turquoise' id='text68'>Phone 2:</span>  </div>
+  <div class='lgr_03 col_10'><dynamic-field [id]='"acsph2a"' [size]=3 [line]=20 [column]=10 [(ngModel)]='acsph2a'></dynamic-field></div>
+  <div class='lgr_03 col_14'><dynamic-field [id]='"acsph2b"' [size]=3 [line]=20 [column]=14 [(ngModel)]='acsph2b'></dynamic-field></div>
+  <div class='lgr_04 col_18'><dynamic-field [id]='"acsph2c"' [size]=4 [line]=20 [column]=18 [(ngModel)]='acsph2c'></dynamic-field></div>
+  <div class='lgr_00 col_23'>  </div>
+  <div class='lgr_16 col_24'><span class='turquoise' id='text70'>EFT Account Id: </span>  </div>
+  <div class='lgr_10 col_41'><dynamic-field [id]='"acseftc"' [size]=10 [line]=20 [column]=41 [(ngModel)]='acseftc'></dynamic-field></div>
+  <div class='lgr_00 col_52'>  </div>
+  <div class='lgr_24 col_53'><span class='turquoise' id='text72'>Primary Card Holder Y/N:</span>  </div>
+  <div class='lgr_01 col_78'><dynamic-field [id]='"acspflg"' [size]=1 [line]=20 [column]=78 [(ngModel)]='acspflg'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_45 col_23'><dynamic-field [id]='"infomsg"' [size]=45 [line]=22 [column]=23 [(ngModel)]='infomsg'></dynamic-field></div>
+  <div class='lgr_00 col_69'>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_78 col_01'><dynamic-field [id]='"errmsg"' [size]=78 [line]=23 [column]=1 [(ngModel)]='errmsg'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_21 col_01'><dynamic-field [id]='"fkeys"' [size]=21 [line]=24 [column]=1 [(ngModel)]='fkeys'></dynamic-field></div>
+  <div class='lgr_07 col_23'><dynamic-field [id]='"fkey05"' [size]=7 [line]=24 [column]=23 [(ngModel)]='fkey05'></dynamic-field></div>
+  <div class='lgr_10 col_31'><dynamic-field [id]='"fkey12"' [size]=10 [line]=24 [column]=31 [(ngModel)]='fkey12'></dynamic-field></div>
+</div>
+</div>

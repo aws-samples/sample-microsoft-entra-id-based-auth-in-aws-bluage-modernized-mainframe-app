@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "importHelpers": true,
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "src",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2022",
+      "dom"
+    ],
+    "module": "es2022",
+    "paths": {
+      "core-js/es7/reflect": ["../node_modules/core-js/proposals/reflect-metadata"],
+      "core-js/es6/*": ["../node_modules/core-js/es/*"]
+    },
+    "allowSyntheticDefaultImports" : true
+  }
+}

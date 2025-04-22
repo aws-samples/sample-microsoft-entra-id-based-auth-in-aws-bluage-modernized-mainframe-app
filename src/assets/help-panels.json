@@ -1,0 +1,27 @@
+[
+  {
+    "panelId": "HACCOUNT",
+    "helpItems": [
+      {
+      "helpId": "ORG",
+      "helpTitle": "<h3> ORG CODE.</h3>",
+      "helpContent": "THIS IS THE ORGANISATION CODE OF THE BRANCH."
+      },
+      {
+        "helpId": "ACC",
+        "helpTitle": "TIPO DE USUARIO-AYUDA",
+        "helpContent": "<FONT COLOR=\"#FFFFFF\"> Tipo de Usuario:</FONT> Código que identifica el tipo de usuario<br> al sistema, para permitir el acceso a diferentes funciones, así:.<br><p><FONT COLOR=\"#FFFFFF\">1</FONT> Administrador del Sistema<br> Este código identifica al administrador del sistema, el cual tiene acceso<br> a todas las funciones del sistema.<br><p> El Nivel de Acceso debe ser 2=Todos.<br><p> El administrador puede corregir los rechazos cuya parametrización sea<br><FONT COLOR=\"#FFFFFF\"> Corrige Administrador </FONT> = S.,<p><FONT COLOR=\"#FFFFFF\">2</FONT> Administrador del Proceso.<br> Este código identifica al administrador del proceso, el cual esta<br> autorizado exclusivamente a los procesos y planes que se asignen para<br> Usuarios por Proceso y Plan.<br><p> El nivel de Acceso debe ser 1= Exclusivo.<br><p> El administrador del proceso, tiene acceso a las siguientes opciones del<br> sistema:.<br><p> Consultas.<br><p> Corregir rechazos.<br><p><FONT COLOR=\"#FFFFFF\">3</FONT> Usuario de Consulta.<br><p> Este código identifica a los usuarios autorizados a las consultas<br> del sistema.<br><p> El nivel de acceso puede ser <FONT COLOR=\"#FFFFFF\">1</FONT> = Exclusivo para ciertos procesos<br>  y planes y <FONT COLOR=\"#FFFFFF\">2</FONT> = a todas las consultas.<br><p><FONT COLOR=\"#FFFFFF\">4</FONT> Usuario de Captura.<br><p> Este código identifica a los usuarios autorizados a las capturas de sistema.<br><p> El Nivel de Acceso es <FONT COLOR=\"#FFFFFF\">1</FONT> = Exclusivo para procesos y planes a los<br> cuales esta autorizado.<br><p> El usuario de captura también está autorizado a las consultas cuyo nivel de<br> acceso es <FONT COLOR=\"#FFFFFF\">1</FONT> = Exclusivo<br>"  
+      },
+      {
+        "helpId": "CCY",
+        "helpTitle": "<h3>CURRENCY.</h3>",
+        "helpContent": "THIS IS CURRENCY OF ACCOUNT NUMBER."
+      },
+      {
+        "helpId": "RELATED",
+        "helpTitle": "<h3>RELATED.</h3>",
+        "helpContent": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla tristique ultricies. Cras tincidunt purus ac sapien vehicula, vel bibendum orci rutrum.</p><p>Quisque vulputate ligula: vel sem pellentesque, in tempus nisl suscipit. Vivamus pulvinar tristique porttitor. Fusce eget ante gravida, fringilla sapien nec, lobortis lorem.</p><p>Nunc luctus semper libero, at viverra felis pulvinar nec. Fusce lacinia urna a t exd laoreet, vel rhoncus purus lacinia. Sed volutpat convallis orci, eu blandit ligula dapibus ac.</p>"
+      }
+    ]
+  }
+]

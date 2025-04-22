@@ -1,0 +1,139 @@
+<div [ngStyle]="mapDivStyle()">
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text1'>Tran:</span>  </div>
+  <div class='lgr_04 col_07'><dynamic-field [id]='"trnname"' [size]=4 [line]=1 [column]=7 [(ngModel)]='trnname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title01"' [size]=40 [line]=1 [column]=21 [(ngModel)]='title01'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text2'>Date:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curdate"' [size]=8 [line]=1 [column]=71 [(ngModel)]='curdate'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_05 col_01'><span class='blue' id='text3'>Prog:</span>  </div>
+  <div class='lgr_08 col_07'><dynamic-field [id]='"pgmname"' [size]=8 [line]=2 [column]=7 [(ngModel)]='pgmname'></dynamic-field></div>
+  <div class='lgr_40 col_21'><dynamic-field [id]='"title02"' [size]=40 [line]=2 [column]=21 [(ngModel)]='title02'></dynamic-field></div>
+  <div class='lgr_05 col_65'><span class='blue' id='text4'>Time:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"curtime"' [size]=8 [line]=2 [column]=71 [(ngModel)]='curtime'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_10 col_35'><span class='brt high neutral' id='text5'>List Users</span>  </div>
+  <div class='lgr_05 col_65'><span class='brt high turquoise' id='text6'>Page:</span>  </div>
+  <div class='lgr_08 col_71'><dynamic-field [id]='"pagenum"' [size]=8 [line]=4 [column]=71 [(ngModel)]='pagenum'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_15 col_05'><span class='turquoise' id='text7'>Search User ID:</span>  </div>
+  <div class='lgr_08 col_21'><dynamic-field [id]='"usridin"' [size]=8 [line]=6 [column]=21 [(ngModel)]='usridin'></dynamic-field></div>
+  <div class='lgr_00 col_30'>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_03 col_05'><span class='neutral' id='text9'>Sel</span>  </div>
+  <div class='lgr_08 col_12'><span class='neutral' id='text10'>User ID </span>  </div>
+  <div class='lgr_20 col_24'><span class='neutral' id='text11'>     First Name     </span>  </div>
+  <div class='lgr_20 col_48'><span class='neutral' id='text12'>     Last Name      </span>  </div>
+  <div class='lgr_04 col_72'><span class='neutral' id='text13'>Type</span>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_03 col_05'><span class='neutral' id='text14'>---</span>  </div>
+  <div class='lgr_08 col_12'><span class='neutral' id='text15'>--------</span>  </div>
+  <div class='lgr_20 col_24'><span class='neutral' id='text16'>--------------------</span>  </div>
+  <div class='lgr_20 col_48'><span class='neutral' id='text17'>--------------------</span>  </div>
+  <div class='lgr_04 col_72'><span class='neutral' id='text18'>----</span>  </div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0001"' [size]=1 [line]=10 [column]=6 [(ngModel)]='sel0001'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid01"' [size]=8 [line]=10 [column]=12 [(ngModel)]='usrid01'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname01"' [size]=20 [line]=10 [column]=24 [(ngModel)]='fname01'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname01"' [size]=20 [line]=10 [column]=48 [(ngModel)]='lname01'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype01"' [size]=1 [line]=10 [column]=73 [(ngModel)]='utype01'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0002"' [size]=1 [line]=11 [column]=6 [(ngModel)]='sel0002'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid02"' [size]=8 [line]=11 [column]=12 [(ngModel)]='usrid02'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname02"' [size]=20 [line]=11 [column]=24 [(ngModel)]='fname02'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname02"' [size]=20 [line]=11 [column]=48 [(ngModel)]='lname02'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype02"' [size]=1 [line]=11 [column]=73 [(ngModel)]='utype02'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0003"' [size]=1 [line]=12 [column]=6 [(ngModel)]='sel0003'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid03"' [size]=8 [line]=12 [column]=12 [(ngModel)]='usrid03'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname03"' [size]=20 [line]=12 [column]=24 [(ngModel)]='fname03'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname03"' [size]=20 [line]=12 [column]=48 [(ngModel)]='lname03'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype03"' [size]=1 [line]=12 [column]=73 [(ngModel)]='utype03'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0004"' [size]=1 [line]=13 [column]=6 [(ngModel)]='sel0004'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid04"' [size]=8 [line]=13 [column]=12 [(ngModel)]='usrid04'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname04"' [size]=20 [line]=13 [column]=24 [(ngModel)]='fname04'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname04"' [size]=20 [line]=13 [column]=48 [(ngModel)]='lname04'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype04"' [size]=1 [line]=13 [column]=73 [(ngModel)]='utype04'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0005"' [size]=1 [line]=14 [column]=6 [(ngModel)]='sel0005'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid05"' [size]=8 [line]=14 [column]=12 [(ngModel)]='usrid05'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname05"' [size]=20 [line]=14 [column]=24 [(ngModel)]='fname05'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname05"' [size]=20 [line]=14 [column]=48 [(ngModel)]='lname05'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype05"' [size]=1 [line]=14 [column]=73 [(ngModel)]='utype05'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0006"' [size]=1 [line]=15 [column]=6 [(ngModel)]='sel0006'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid06"' [size]=8 [line]=15 [column]=12 [(ngModel)]='usrid06'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname06"' [size]=20 [line]=15 [column]=24 [(ngModel)]='fname06'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname06"' [size]=20 [line]=15 [column]=48 [(ngModel)]='lname06'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype06"' [size]=1 [line]=15 [column]=73 [(ngModel)]='utype06'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0007"' [size]=1 [line]=16 [column]=6 [(ngModel)]='sel0007'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid07"' [size]=8 [line]=16 [column]=12 [(ngModel)]='usrid07'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname07"' [size]=20 [line]=16 [column]=24 [(ngModel)]='fname07'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname07"' [size]=20 [line]=16 [column]=48 [(ngModel)]='lname07'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype07"' [size]=1 [line]=16 [column]=73 [(ngModel)]='utype07'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0008"' [size]=1 [line]=17 [column]=6 [(ngModel)]='sel0008'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid08"' [size]=8 [line]=17 [column]=12 [(ngModel)]='usrid08'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname08"' [size]=20 [line]=17 [column]=24 [(ngModel)]='fname08'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname08"' [size]=20 [line]=17 [column]=48 [(ngModel)]='lname08'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype08"' [size]=1 [line]=17 [column]=73 [(ngModel)]='utype08'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0009"' [size]=1 [line]=18 [column]=6 [(ngModel)]='sel0009'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid09"' [size]=8 [line]=18 [column]=12 [(ngModel)]='usrid09'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname09"' [size]=20 [line]=18 [column]=24 [(ngModel)]='fname09'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname09"' [size]=20 [line]=18 [column]=48 [(ngModel)]='lname09'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype09"' [size]=1 [line]=18 [column]=73 [(ngModel)]='utype09'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_01 col_06'><dynamic-field [id]='"sel0010"' [size]=1 [line]=19 [column]=6 [(ngModel)]='sel0010'></dynamic-field></div>
+  <div class='lgr_00 col_08'>  </div>
+  <div class='lgr_08 col_12'><dynamic-field [id]='"usrid10"' [size]=8 [line]=19 [column]=12 [(ngModel)]='usrid10'></dynamic-field></div>
+  <div class='lgr_20 col_24'><dynamic-field [id]='"fname10"' [size]=20 [line]=19 [column]=24 [(ngModel)]='fname10'></dynamic-field></div>
+  <div class='lgr_20 col_48'><dynamic-field [id]='"lname10"' [size]=20 [line]=19 [column]=48 [(ngModel)]='lname10'></dynamic-field></div>
+  <div class='lgr_01 col_73'><dynamic-field [id]='"utype10"' [size]=1 [line]=19 [column]=73 [(ngModel)]='utype10'></dynamic-field></div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_56 col_12'><span class='brt high neutral' id='text29'>Type 'U' to Update or 'D' to Delete a User from the list</span>  </div>
+</div>
+<div class='lgr_col empty'>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_78 col_01'><dynamic-field [id]='"errmsg"' [size]=78 [line]=23 [column]=1 [(ngModel)]='errmsg'></dynamic-field></div>
+</div>
+<div class='lgr_col'>
+  <div class='lgr_48 col_01'><span class='yellow' id='text30'>ENTER=Continue  F3=Back  F7=Backward  F8=Forward</span>  </div>
+</div>
+</div>
