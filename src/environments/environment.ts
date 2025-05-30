@@ -10,5 +10,6 @@ export const environment = {
   redirectUri: "$redirectUrl",
   apiUri: '$apiUri',
   apiScope: '$apiScope',
-  enableAuthentication: true
+  enableAuthentication: true,
+  postLogoutRedirectUri: 'http://localhost:4200'
 };

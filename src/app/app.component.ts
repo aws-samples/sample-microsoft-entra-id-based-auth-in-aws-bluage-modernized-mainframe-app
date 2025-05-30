@@ -5,6 +5,7 @@ import { Subject } from 'rxjs';
 import { MSAL_GUARD_CONFIG, MsalBroadcastService, MsalGuardConfiguration, MsalService } from '@azure/msal-angular';
 import { AuthenticationResult, InteractionStatus, InteractionType, PopupRequest, RedirectRequest } from '@azure/msal-browser';
 import { filter, takeUntil } from 'rxjs/operators';
+import { environment } from 'environments/environment';
 
 @Component({
     moduleId: module.id,
@@ -73,7 +74,7 @@ logout() {
       });
       } else {
           this.authService.logoutRedirect({
-                    postLogoutRedirectUri: 'http://localhost:4200'
+                    postLogoutRedirectUri: environment.postLogoutRedirectUri
                   });
       }
   }
