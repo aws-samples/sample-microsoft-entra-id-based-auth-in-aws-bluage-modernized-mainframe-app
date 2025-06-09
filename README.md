@@ -14,7 +14,7 @@ The following list of files in the repo have the changes required to integrate M
 
 # Developing Locally
 
-+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0. We recommend that you deploy your own version of the application and do not copy this code. Use the examples listed above to make changes to your app.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0. We recommend that you deploy your own version of the application and do not copy this code. Use the examples listed above to make changes to your app.
 
 ## Development server
 
